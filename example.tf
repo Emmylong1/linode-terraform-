@@ -15,7 +15,7 @@ provider  "linode" {
 
 resource  "linode_instance"  "server2" {
   image = "linode/ubuntu22.04"
-  label = "server2"
+  label = "server1"
   group = "terraform"
   region = "us-east"
   type = "g6-standard-1"
@@ -24,7 +24,7 @@ resource  "linode_instance"  "server2" {
 
 resource  "linode_instance"  "server1" {
   image = "linode/ubuntu22.04"
-  label = "server1"
+  label = "server2"
   group = "terraform"
   region = "us-east"
   type = "g6-standard-1"
